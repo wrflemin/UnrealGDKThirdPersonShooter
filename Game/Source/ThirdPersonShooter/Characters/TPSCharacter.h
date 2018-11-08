@@ -213,28 +213,28 @@ private:
 	ETPSTeam Team;
 
 protected:
-	UPROPERTY(EditDefaultsOnly, Category = "Team Appearance")
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Team Appearance")
 	UMaterialInstance* NoneTeamMaterial;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Team Appearance")
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Team Appearance")
 	UMaterialInstance* RedTeamMaterial;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Team Appearance")
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Team Appearance")
 	UMaterialInstance* GreenTeamMaterial;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Team Appearance")
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Team Appearance")
 	UMaterialInstance* BlueTeamMaterial;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Team Appearance")
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Team Appearance")
 	UMaterialInstance* YellowTeamMaterial;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Team Appearance")
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Team Appearance")
 	UMaterialInstance* PurpleTeamMaterial;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Team Appearance")
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Team Appearance")
 	UMaterialInstance* BlackTeamMaterial;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Team Appearance")
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Team Appearance")
 	UMaterialInstance* WhiteTeamMaterial;
 
 public:

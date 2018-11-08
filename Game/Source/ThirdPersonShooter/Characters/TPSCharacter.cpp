@@ -102,6 +102,8 @@ void ATPSCharacter::Tick(float DeltaSeconds)
 	{
 		UpdateAimRotation(LocalAimUpdateThreshold);
 	}
+
+	Super::Tick(DeltaSeconds);
 }
 
 void ATPSCharacter::UpdateTeamColor()
@@ -487,7 +489,7 @@ void ATPSCharacter::OnRep_Team()
 		return;
 	}
 
-	UpdateTeamColor();
+	//UpdateTeamColor();
 }
 
 FVector ATPSCharacter::GetLineTraceStart() const
