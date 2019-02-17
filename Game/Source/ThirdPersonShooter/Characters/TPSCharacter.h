@@ -91,6 +91,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Aim")
 	float GetAimPitch();
 
+	UFUNCTION()
+	void OnRep_CurrentHealth();
+
 	// [server + client] Returns true if the character is able to shoot at the given moment.
 	bool CanFire();
 
@@ -169,7 +172,7 @@ private:
 	int32 MaxHealth;
 
 	// Current health of the character, can be at most MaxHealth.
-	UPROPERTY()
+	UPROPERTY(ReplicatedUsing = OnRep_CurrentHealth)
 	int32 CurrentHealth;
 
 	// If true, the character is currently ragdoll-ing.
